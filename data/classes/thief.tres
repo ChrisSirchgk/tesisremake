@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ClassData" format=3 uid="uid://cbtvr5rp1n5ge"]
+
+[ext_resource type="Script" uid="uid://bfnfqskts4l28" path="res://scripts/data/class_data.gd" id="1_3ci6n"]
+
+[resource]
+script = ExtResource("1_3ci6n")
+id = "thief"
+max_hp = 90
+attack = 18
+defense = 3
+speed = 145.0
+ability_name = "Shadowstep"
+metadata/_custom_type_script = "uid://bfnfqskts4l28"

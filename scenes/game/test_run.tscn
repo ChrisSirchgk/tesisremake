@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://cg1u1iqrhgpa3"]
+
+[ext_resource type="Script" uid="uid://8taai6w4dw7t" path="res://scripts/game/test_run.gd" id="1_go4bw"]
+[ext_resource type="PackedScene" uid="uid://b0wo1xvuwx6cu" path="res://scenes/ui/hud.tscn" id="1_qyfeb"]
+[ext_resource type="Script" uid="uid://fw5rr21tjkhe" path="res://scripts/ui/hud.gd" id="2_tkxgy"]
+
+[node name="TestRun" type="Control" unique_id=1088673299]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_go4bw")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1164285228]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0.25490198, 1)
+
+[node name="Center" type="CenterContainer" parent="." unique_id=1727242165]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ArenaLabel" type="Label" parent="Center" unique_id=1358094619]
+layout_mode = 2
+text = "ARENA DE PRUEBA — ENTORNO NO CONECTADO"
+horizontal_alignment = 1
+
+[node name="Hud" parent="." unique_id=1676961913 instance=ExtResource("1_qyfeb")]
+script = ExtResource("2_tkxgy")

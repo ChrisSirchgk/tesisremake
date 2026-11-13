@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ClassData" format=3 uid="uid://dc5k7iqouwdbf"]
+
+[ext_resource type="Script" uid="uid://bfnfqskts4l28" path="res://scripts/data/class_data.gd" id="1_sxcey"]
+
+[resource]
+script = ExtResource("1_sxcey")
+id = "mage"
+max_hp = 75
+attack = 25
+defense = 2
+ability_name = "Lifesteal"
+metadata/_custom_type_script = "uid://bfnfqskts4l28"

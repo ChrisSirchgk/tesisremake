@@ -1,0 +1,101 @@
+[gd_scene format=3 uid="uid://b0wo1xvuwx6cu"]
+
+[node name="Hud" type="CanvasLayer" unique_id=103809089]
+process_priority = 10
+
+[node name="Root" type="Control" parent="." unique_id=1818626088]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TopLeft" type="PanelContainer" parent="Root" unique_id=278563451]
+custom_minimum_size = Vector2(300, 130)
+layout_mode = 1
+offset_right = 300.0
+offset_bottom = 130.0
+
+[node name="StatsColumn" type="VBoxContainer" parent="Root/TopLeft" unique_id=1186670789]
+layout_mode = 2
+
+[node name="PlayerName" type="Label" parent="Root/TopLeft" unique_id=1041027519]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Jugador: Explorador"
+
+[node name="ClassLabel" type="Label" parent="Root/TopLeft" unique_id=598027000]
+layout_mode = 2
+text = "Clase: Sin seleccionar"
+
+[node name="HealthBar" type="ProgressBar" parent="Root/TopLeft" unique_id=649094619]
+layout_mode = 2
+value = 100.0
+show_percentage = false
+
+[node name="HealthText" type="Label" parent="Root/TopLeft" unique_id=386344243]
+layout_mode = 2
+size_flags_vertical = 8
+text = "Vida: 100 / 100"
+
+[node name="TopCenter" type="PanelContainer" parent="Root" unique_id=206230148]
+custom_minimum_size = Vector2(320, 50)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -160.0
+offset_right = 160.0
+offset_bottom = 50.0
+grow_horizontal = 2
+
+[node name="RoomLabel" type="Label" parent="Root/TopCenter" unique_id=1182381889]
+layout_mode = 2
+
+[node name="TopRight" type="PanelContainer" parent="Root" unique_id=1868304331]
+custom_minimum_size = Vector2(260, 80)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -260.0
+offset_bottom = 80.0
+grow_horizontal = 0
+
+[node name="RewardLabel" type="Label" parent="Root/TopRight" unique_id=1423891400]
+layout_mode = 2
+text = "Fragmentos: 125"
+
+[node name="DebugPanel" type="PanelContainer" parent="Root" unique_id=1842729021]
+custom_minimum_size = Vector2(540, 56)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -270.0
+offset_top = -56.0
+offset_right = 270.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="DebugRow" type="HBoxContainer" parent="Root/DebugPanel" unique_id=2117201658]
+layout_mode = 2
+
+[node name="DamageButton" type="Button" parent="Root/DebugPanel/DebugRow" unique_id=997445169]
+layout_mode = 2
+size_flags_horizontal = 2
+text = "Simular Daño (-12)"
+
+[node name="RewardButton" type="Button" parent="Root/DebugPanel/DebugRow" unique_id=264316327]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Simular Recompensa"
+
+[node name="MenuButton" type="Button" parent="Root/DebugPanel/DebugRow" unique_id=61185394]
+layout_mode = 2
+size_flags_horizontal = 10
+text = "Volver al Menú"
